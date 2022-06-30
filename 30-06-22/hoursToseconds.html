@@ -13,16 +13,16 @@
         inspect to see output
     </h1>
     <script>
-        // program to convert age in years to age in days
+        // program to convert hours in seconds
 
-        let user_age = parseInt(prompt("Enter Age"));
+        let hrs = parseInt(prompt("Enter Hours"));
 
-        function age(a) {
-            let result = a * 365;
-            console.log(result);
+        function hoursToSeconds(h) {
+            let seconds = h * 60 *60;
+            console.log(seconds);
         }
 
-        age(user_age);
+        hoursToSeconds(hrs);
     </script>
 </body>
 
