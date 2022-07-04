@@ -8,19 +8,15 @@
 </head>
 <body>
     <script>
-        let arr = [10,20,30,40,50];
-
+        let num = parseInt(prompt("Enter number"));
         let sum=0;
-        function sumOfArrayElement(){
-            for(i=0;i<=arr.length-1;i++){
-                sum =sum + arr[i];
+        function sumOfNaturalNumber(n){
+            for(i=1;i<=n;i++){
+                sum = sum+i;
             }
-            console.log(sum);
-
+            console.log(`sum of ${num} natural number is ${sum}`);
         }
-
-        sumOfArrayElement(arr);
-
+        sumOfNaturalNumber(num);
     </script>
 </body>
 </html>
