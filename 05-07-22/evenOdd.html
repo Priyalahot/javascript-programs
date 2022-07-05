@@ -8,16 +8,18 @@
 </head>
 <body>
     <script>
-        let n = parseInt(prompt("enter number"));
-        let cube;
-        function printCube(n){
-            for(let i=1;i<=n;i++){
-                 cube = i*i*i;
-                
+        let num = prompt("enter number");
+
+        function checkEvenOdd(n){
+            if(n%2===0){
+                console.log("even number");
             }
-            console.log(cube);
+            else{
+                console.log("odd number");
+            }
+
         }
-        printCube(n);
+        checkEvenOdd(num);
     </script>
 </body>
 </html>
