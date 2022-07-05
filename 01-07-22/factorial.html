@@ -8,13 +8,15 @@
 </head>
 <body>
     <script>
-        let num = parseInt(prompt("Enter number"));
-
+         let num = parseInt(prompt("Enter number"));
+        let fact=1;
         function factorial(n){
-            let fact = n*(n-1);
-            console.log("factorial of "+num +" " +"is"+" "+fact);
-
+            for(let i=1;i<=n;i++){
+            fact = fact*i;
         }
+        console.log("factorial of "+num +" " +"is"+" "+fact);
+    }
+    
         factorial(num);
     </script>
 </body>
