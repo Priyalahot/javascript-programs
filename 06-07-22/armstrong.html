@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let n = parseInt(prompt("Enter number"));
+    let rem, sum=0, cube;
+    function CheckArmstrongNumber(num){
+        let n = num;
+        while(num){
+            rem = num % 10;
+            cube = rem * rem * rem;
+            sum = sum + cube;
+            num = parseInt(num / 10);
+        }
+        if(n === sum){
+            console.log(`${sum} is a armstrong number`);
+        }
+        else{
+            console.log(`${sum} is not a armstrong number`);
+        }
+    }
+    CheckArmstrongNumber(n);
+   </script> 
+    
+</body>
+</html>

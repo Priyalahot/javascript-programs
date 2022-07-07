@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = parseInt(prompt("enter first number"));
+        let num2 = parseInt(prompt("enter second number"));
+        let num3 = parseInt(prompt("enter third number"));
+
+        function checkLastDigit(n1,n2,n3){
+            let result1 = n1 % 10;
+            let result2 = n2 % 10;
+            let result3 = n3 % 10;
+            // console.log(result1);
+            // console.log(result2);
+            // console.log(result3);
+
+            if(result1==result2 && result1==result3){
+                console.log(`${n1} ${n2} ${n3} have same last digit`);
+            }
+            else{
+                console.log(`${n1} ${n2} ${n3} dont have same last digit`);
+            }
+        }
+        checkLastDigit(num1,num2,num3);
+    </script>
+</body>
+</html>
