@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = prompt("enter string to reverse");
+
+        function reverseString(s){
+            let new_str = '';
+
+            for(let i=str.length-1;i>=0;i--){
+                new_str = new_str + str[i];
+            }
+            console.log(new_str);
+
+        }
+        reverseString(str);
+    </script>
+    <script>
+        // reverse function using built in function
+        let str1 = prompt("enter string");
+
+        function stringReverse(s){
+
+            let string = str1.split("");
+            let reverse = string.reverse();
+            let joinString = reverse.join("");
+            console.log(joinString);
+        }
+        stringReverse(str1);
+    </script>
+</body>
+</html>
