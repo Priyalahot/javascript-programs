@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //using regex
+        const string = 'Mr red has red house and red car';
+
+        const regex = /red/gi;
+
+        const newString = string.replace(regex,'blue');
+
+        console.log(newString);
+    </script>
+
+    <script>
+        // using split method
+        const str = 'Mr blue has blue house and blue car';
+
+        const result = string.split('blue').join('red');
+
+        console.log(result);
+    </script>
+</body>
+</html>
