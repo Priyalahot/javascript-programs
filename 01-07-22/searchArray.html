@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let names = ["saurabh","piya","akolkar","lahot"];
+
+        let userInput = prompt("Enter Name");
+
+        function searchArrayNames(u){
+            for(let i = 0;i<=names.length-1;i++){
+                if(names[i]===u){
+                    console.log("yes");
+                }
+                else{
+                    console.log("no");
+                }
+            }
+
+        }
+        searchArrayNames(userInput);
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // program to trim a string
+        let string = '    Hello world    ';
+
+        console.log("before trim");
+        console.log(string);
+
+        let result = string.trim();
+        console.log("after trim");
+
+        console.log(result);
+
+        // trim string with regex
+
+        function trimString(s){
+            let trimValue = s.replace(/^\s+|\s+$/g,'');
+            return trimValue;
+        }
+        
+        let res = trimString('  hello saurabh   ');
+        console.log(res);
+    </script>
+</body>
+</html>

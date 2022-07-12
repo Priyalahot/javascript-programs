@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // check string with includes()
+
+        let str = prompt('enter a string');
+        let checkString = prompt('enter a string that you want to check ');
+
+        if(str.includes(checkString)){
+            console.log(`the string contains ${checkString}`);
+        }else{
+            console.log(`the string does not contains ${checkString}`);
+        }
+
+
+        // check string with indexOf
+
+        if(str.indexOf(checkString) !==-1){
+            console.log(`the string contains ${checkString}`);
+        }else{
+            console.log(`the string does not contains ${checkString}`);
+        }
+    </script>
+</body>
+</html>

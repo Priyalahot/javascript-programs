@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789';
+        
+
+        function generateString(length){
+            let result =' ';
+            const charlength = characters.length;
+            for(let i =0;i<length;i++){
+
+                result = result+characters.charAt(Math.floor(Math.random()*charlength));
+            }
+            return result;
+        }
+        console.log(generateString(5));
+
+        // using built in method
+
+            const  strResult =  Math.random().toString(36).substring(2,7);
+            console.log(strResult);
+
+    </script>
+</body>
+</html>

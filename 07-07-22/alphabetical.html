@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = prompt("Enter sentence");
+
+        function sortStringAlphabetically(str){
+            let words = str.split(' ');
+            words.sort();
+
+            console.log("sorted words are :");
+
+            for(i=0;i<=words.length-1;i++){
+                console.log(words[i]);
+            }
+
+        }
+        sortStringAlphabetically(str);
+    </script>
+</body>
+</html>

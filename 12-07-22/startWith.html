@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // to check if string start with another string
+
+        const string = "hello world";
+         const tocheckString = "hp";
+
+         if(string.startsWith(tocheckString)){
+            console.warn('the string start with "he".');
+
+         }else{
+            console.warn('the string does not start with "he".');
+         }
+
+        //  using lastIndexOf
+        let result = string.lastIndexOf(tocheckString,0)===0;
+        if(result){
+            console.warn('the string start with "he".');
+
+        }else{
+            console.warn('the string does not start with "he".');
+         }
+
+        //  using regex
+        const pattern = /^he/;
+
+        let res = pattern.test(string);
+        if(result){
+            console.warn('the string start with "he".');
+
+        }else{
+            console.warn('the string does not start with "he".');
+         }
+
+    </script>
+    
+</body>
+</html>
