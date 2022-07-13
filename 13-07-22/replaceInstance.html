@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // replace all instance of charachter using regex
+
+
+        let str = "Learning javascript program";
+
+        let result = str.replace(/a/g ,"A");
+        console.log(str);
+        console.log("after replace");
+        console.log(result);
+
+        console.log("--------------------------");
+        console.log("using split and join");
+        // using built in methode
+        let splitString = str.split('a');
+        let res = splitString.join('A');
+        console.log(res);
+    </script>
+</body>
+</html>
