@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // program to format the date
+
+        // get current date
+        let currenDate = new Date();
+        console.log(currenDate);
+
+        // get the day form date
+        let day = currenDate.getDate();
+        console.log(day);
+
+        // get the month form date +1 because month start form 0
+
+        let month = currenDate.getMonth()+1;
+        console.log(month);
+
+        // get year from date
+        let year = currenDate.getFullYear();
+        console.log(year);
+
+        if(day<10){
+            day = '0'+day;
+        }
+        if(month<10){
+            month='0'+month;
+
+        }
+
+        // display date in various formats
+
+        let formate1 = month + '/' + day + "/"+ year;
+        console.log(formate1);
+
+        let formate2 = month + '-' + day + "-"+ year;
+        console.log(formate2);
+
+        let formate3 = day + '-' + month + "-"+ year;
+        console.log(formate3);
+
+        let formate4 = day + '/' + month + "/"+ year;
+        console.log(formate4
+        );
+
+
+    </script>
+</body>
+</html>
