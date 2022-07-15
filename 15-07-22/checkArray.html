@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // usinf includes()
+
+        let array = ['you','will','learn','javascript'];
+
+        let hasValue = array.includes('javascript');
+
+        // checking condition
+
+        if(hasValue){
+            console.log('Array contains a value');
+        }
+        else{
+            console.log('Array does not contain a value');
+        }
+
+        // uisng indexOf()
+
+        let hasValue1 = array.indexOf('will') !== -1;
+
+        if(hasValue1){
+            console.log("arrya contains value");
+        }else{
+            console.log("not contain");
+        }
+    </script>
+</body>
+</html>

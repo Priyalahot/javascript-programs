@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+     function insertItemInArray(){
+        let array = [1,2,3,4,5];
+
+        // index to add
+        let index = 3;
+        // the element you want add
+        let element = 8;
+
+        array.splice(index,0,element)
+        console.log(array);
+    }
+    insertItemInArray();
+
+    // insert item using for loop
+
+    // function insertItem(){
+    //     let array1 = [1,2,3,4,5];
+    //     let index1 = 3;
+    //     let element1 = 9;
+    //     for(let i = array1.length;i>index1;i++){
+    //         array1[i]=array1[i-1];
+    //     }
+    //     array1[index1]=element1;
+    //     console.log(array1);
+    // }
+
+    // insertItem();
+
+   </script>
+</body>
+</html>

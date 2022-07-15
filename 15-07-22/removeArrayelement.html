@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function removeItemFromArray(array,n){
+            let newArray =[];
+
+            for(let i =0;i<array.length;i++){
+                if(array[i] !== n){
+
+                    newArray.push(array[i]);
+                }
+            }
+            return newArray;
+        }
+
+        let result = removeItemFromArray([1,2,3,4,5], 6);
+        console.log(result);
+
+        // using splice()
+    function removeItem(array,n){
+        let index = array.indexOf(n);
+
+        if(index > -1){
+            array.splice(index,1);
+        }
+        return array;
+    }
+
+    let res = removeItem([1,2,3,4,5,6],5);
+    console.log(res);
+    </script>
+</body>
+</html>
