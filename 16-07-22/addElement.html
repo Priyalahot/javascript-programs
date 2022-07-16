@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // add element to array using unshift()
+
+        function addElement(arr){
+            arr.unshift(4);
+            console.log(arr);
+
+            console.log("---------------------------");
+            console.log("using splice");
+            arr.splice(0,0,5);
+            console.log(arr);
+
+            console.log("---------------------------");
+            console.log("using spread operator");
+            arr = [6 , ...arr];
+            console.log(arr);
+
+            console.log("---------------------------");
+            console.log("using concat()");
+            arr=[7].concat(arr);
+            console.log(arr);
+
+        }
+
+        let array = [1,2,3];
+        addElement(array);
+
+       
+
+
+
+    </script>
+</body>
+</html>

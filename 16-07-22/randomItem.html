@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    to get random item from array
+
+    function getRandomItem(arr){
+        // get randon index value
+        let randomIndex = Math.floor(Math.random()* arr.length);
+
+        let item = arr[randomIndex];
+
+        return item;
+    }
+
+    let array = [1,"hi",2,5,'bye'];
+
+    let result = getRandomItem(array);
+    console.log(result);
+    </script>
+</body>
+</html>

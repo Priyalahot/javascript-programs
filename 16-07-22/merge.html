@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // using concat and for loop
+
+        function getUniqueAfterMerge(arr1,arr2){
+            let arr = arr1.concat(arr2);
+            
+            let uniqueArr =[];
+
+            for(let i of arr){
+                if(uniqueArr.indexOf(i)==-1){
+                    uniqueArr.push(i);
+                }
+            }
+            console.log(uniqueArr);
+        }
+
+        let array1 =[1,2,3];
+        let array2 =[2,3,4];
+
+        getUniqueAfterMerge(array1,array2);
+
+        // using spread syntax and set
+
+        function getUnique(arr1,arr2){
+            let arr = [...arr1,...arr2];
+
+            let unique = [...new Set(arr)];
+            console.log(unique);
+        }
+
+        let ar1 = [2,3,4];
+        let ar2 = [2,3,5];
+        getUnique(ar1,ar2);
+    </script>
+</body>
+</html>
