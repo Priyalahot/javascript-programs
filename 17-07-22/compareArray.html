@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // compare array using JSON.stringify()
+
+        function compareArrays(arr1,arr2){
+            let result = JSON.stringify(arr1)== JSON.stringify(arr2);
+
+            if(result){
+                console.log("the arrays have same element");
+            }else{
+                console.log("the array have different element");
+            }
+        }
+
+        let arr1 = [1,2,3,4];
+        let arr2 = [1,2,3,4];
+
+        compareArrays(arr1,arr2);
+
+        // compare array using for loop
+
+        function compareArr(a1,a2){
+            if(a1.length != a2.length){
+                return false;
+            }else{
+                let result;
+
+                for(let i=0; i<a1.length;i++){
+                    if(a1[i] != a2[i]){
+                        return false;
+                    }else{
+                        result = true;
+                    }
+                }
+                return result;
+            }
+        }
+
+        let array1 = [1,2,3,4,5];
+        let array2 = [0,2,3,4,5];
+
+        let result = compareArr(array1,array2);
+
+        if(result){
+                console.log("the arrays have same element");
+            }else{
+                console.log("the array have different element");
+            }
+        
+    </script>
+</body>
+</html>

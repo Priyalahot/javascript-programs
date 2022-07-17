@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // extract value using  map()
+
+        function extractValue(arr,prop){
+            let extractedValue = arr.map(item => item[prop]);
+            return extractedValue;
+        }
+
+        let objArr = [{a:1,b:2},{a:4,b:5}];
+        let result = extractValue(objArr, 'a');
+        console.log(result);
+
+
+        // using for loop
+
+        function extractValueIn(ar,propr){
+            let value =[];
+
+            for(let i=0;i<ar.length;i++){
+                value.push(ar[i][propr]);
+            }
+            return value;
+        }
+        let objarr = [{a:1,b:2},{a:4,b:5}];
+        let res = extractValueIn(objarr, 'b');
+        console.log(res);
+    </script>
+</body>
+</html>
