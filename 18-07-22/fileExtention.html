@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // program to get file extension
+
+        function fileExtention(filename){
+            let extension = filename.split('.').pop();
+            return extension
+        }
+
+        let result = fileExtention('saurabh.html');
+        console.log(result);
+
+        let result2 = fileExtention('piya.js');
+        console.log(result2);
+
+        console.log("-----------------------------");
+
+        // using substring() and lastIndexOf()
+        function getFileExtention(filename1){
+            let extension1 = filename1.substring(filename1.lastIndexOf('.')+1, filename1.length);
+            return extension1;
+        }
+        let result3 = getFileExtention("abc.css");
+        console.log(result3);
+    </script>
+</body>
+</html>
