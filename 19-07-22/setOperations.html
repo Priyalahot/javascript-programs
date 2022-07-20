@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // union operation
+        // contains elements of both sets
+
+        console.log("union operation");
+        function union(a ,b){
+            let unionSet = new Set(a);
+            for(let i of b){
+                unionSet.add(i);
+            }
+            return unionSet;
+        }
+
+        let setA = new Set([1,2,3,4,5]);
+        let setB = new Set([6,7,8,9,10]);
+
+        let result = union(setA,setB);
+
+        console.log(result);
+
+        // set intersection opearation
+        // elements of set that are also in set b
+        console.log("-------------------------------");
+        console.log("intersection operation");
+
+        function intersection(a,b){
+            let intersectionSet = new Set();
+
+            for(let i of b){
+                if(a.has(i)){
+                    intersectionSet.add(i);
+                }
+            }
+            return intersectionSet;
+        }
+
+        let set_a = new Set(['a','b','c']);
+        let set_b = new Set(['a','b','d','e']);
+
+        let res = intersection(set_a,set_b);
+        console.log(res);
+
+        // set difference operation
+        // elements of set a that are not in set b
+        console.log("-------------------------------");
+        console.log("difference operation");
+
+        function difference(A,B){
+            let differenceSet = new Set(A);
+
+            for(let i of B){
+                differenceSet.delete(i);
+            }
+            return differenceSet;
+        }
+
+        let A = new Set([1,2,3,45,6]);
+        let B = new Set([1,2,4,5,7]);
+
+        let res1 = difference(A,B);
+        console.log(res1);
+
+        // set subset operation
+        // true if all elements of set b are in set a
+
+        console.log("-------------------------------");
+        console.log("subset operation");
+        function subset(sA,sB){
+            for(let i of sB){
+                if(!sA.has(i)){
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        let sA = new Set([1,2,3,45,6]);
+        let sB = new Set([1,2,4,5,7]);
+
+        let res2 = subset(sA,sB);
+        console.log(res2);
+
+        sA = new Set([1,2,3]);
+        sB = new Set([1,2,3]);
+
+        let res3 = subset(sA,sB);
+        console.log(res3);
+
+    </script>
+</body>
+</html>

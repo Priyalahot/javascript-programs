@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      /*  syntax : function fnName(param1 = default1,.....){ 
+            function body
+        }*/
+
+        function sum(x=3,y=5){
+            return x + y;
+        }
+
+        console.log(sum(5,6));
+        let res = sum();
+        console.log(res);
+
+        console.log(sum(7));
+        console.log(sum());
+
+        // using previous parameter in default value expression
+        console.log("--------------------------------");
+
+        let cal = function( x=5, y=x+2){
+            return x + y;
+        }
+
+        console.log(cal());
+
+        let res1 = cal(10);
+        console.log(res1);
+
+
+
+    </script>
+</body>
+</html>
