@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // using instanceOf operator
+        // program to check if a variable is of function type
+        console.log("---------------------------");
+        console.log("using instanceOf operator");
+
+
+        function testVar(variable){
+            if(variable instanceof Function){
+                console.log("the variable is of function type");
+            }else{
+                console.log("the variable is not function type");
+            }
+        }
+        let count =true;
+        let x =function(){
+            console.log('helo');
+        };
+        testVar(count);
+        testVar(x);
+
+        // using typeOf operator
+        console.log("---------------------------");
+        console.log("  using typeOf operator");
+        
+
+
+        function checkVar(Var){
+            if(typeof Var === 'function'){
+                console.log("the variable is of function type");
+            }else{
+                console.log("the variable is not function type");
+            }
+        }
+
+        let a = true;
+        let b = function(){
+            console.log('hi');
+        };
+
+        checkVar(a);
+        checkVar(b);
+
+
+        // using Object.prototype.toString.call() method
+        console.log("---------------------------");
+        console.log(" using Object.prototype.toString.call() method");
+
+
+        function varcheck(var1){
+
+            if(Object.prototype.toString.call(var1) == '[object Function]'){
+                console.log("the variable is of function type");
+            }else{
+                console.log("the variable is not function type"); 
+            }
+        }
+
+        let c = true;
+        let d = function(){
+            console.log("abc")
+        };
+
+        varcheck(c);
+        varcheck(d);
+
+    </script>
+</body>
+</html>
