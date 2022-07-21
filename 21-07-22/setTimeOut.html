@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // program to pass parameter to a setTimeOut() function
+
+        function greet(){
+            console.log("hello");
+        }
+
+        // passing paramter
+
+        setTimeout(greet,3000);
+        console.log("this msg is shown first");
+
+        // passing parameter to the function
+
+        function hello(x,y){
+            console.log(x);
+            console.log(y);
+        }
+        // passing parameter
+        setTimeout(hello , 3000, "hi", "saurabh");
+        console.log("this msg is shown first");
+
+    </script>
+</body>
+</html>
