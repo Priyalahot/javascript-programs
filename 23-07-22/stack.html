@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // program to implement stack data structure
+
+        class Stack{
+            constructor(){
+                this.item = [];
+            }
+            // add element to stack
+            add(element){
+                return this.item.push(element);
+            }
+
+            remove(element){
+                if(this.item.length > 0){
+                    return this.item.pop();
+                }
+            }
+            // view last element
+            peek(){
+                return this.item[this.item.length-1];
+            }
+
+            // check stack it empty
+            isEmpty(){
+                return this.item.length == 0;
+            }
+            // the size of stack
+            size(){
+                return this.item.length;
+            }
+            // empty the stack
+            clear(){
+                this.item = [];
+            }
+        }
+
+        let stack = new Stack();
+        stack.add(1);
+        stack.add(2);
+        stack.add(3);
+        stack.add(4);
+
+        console.log(stack.item);
+
+        stack.remove();
+        console.log(stack.item);
+
+        console.log(stack.peek());
+
+        console.log(stack.isEmpty());
+
+        console.log(stack.size());
+
+        stack.clear();
+        console.log(stack.item);
+
+
+    </script>
+</body>
+</html>

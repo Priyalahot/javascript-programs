@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // program to find the LCM of two integers
+
+        // take input
+
+        let num1 = prompt("Enter a first integer");
+        let num2 = prompt("Enter second integer");
+
+        // higher number among number1 anf number 2 is stored in min
+        
+        let min = (num1 > num2) ? num1 : num2 ;
+
+        // while loop
+        while(true){
+            if(min % num1 == 0 && min % num2 == 0){
+                console.log(`The LCM of ${num1} and ${num2} is ${min}`);
+                break;
+            }
+            min++;
+        }
+    </script>
+</body>
+</html>
