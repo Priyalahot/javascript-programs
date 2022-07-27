@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a JavaScript program to check two given numbers and return true if one of the number is 50 
+        // or if their sum is 50. 
+
+        let num1 = parseInt(prompt("enter num 1"));
+        let num2 = parseInt(prompt("enter num 2"));
+
+        function checkNum(n1,n2){
+            if(num1 == 50 || num2 == 50 || num1 + num2 == 50){
+                return true;
+            }
+        }
+        let res = checkNum(num1,num2);
+        if(res){
+            console.log("true");
+        }else{
+            console.log("false");
+        }
+    </script>
+</body>
+</html>
