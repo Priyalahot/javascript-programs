@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a JavaScript program to check whether two numbers are in range 40..60 
+        // or in the range 70..100 inclusive
+
+        function checkNum(x,y){
+            if((x>40 && x<60) && (y>40 && y<60)){
+                console.log(`${x} and ${y} are in between 40 t0 60`);
+            }else if((x>70 && x<=100) && (y>70 && y<=100)){
+                console.log(`${x} and ${y} are in between 70 t0 100`);
+            }else{
+                console.log("not in range");
+            }
+        }
+
+        checkNum(45,55);
+        checkNum(72,89);
+        checkNum(1,2);
+    </script>
+</body>
+</html>
