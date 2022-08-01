@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  Write a JavaScript program to check from three given numbers (non negative integers) that two 
+        // or all of them have the same rightmost digit
+
+        function checkLastDigit(a,b,c){
+            if(a%10 == b%10 && b%10==c%10 && a%10==c%10){
+                return true;
+            }else{
+                return false
+            }
+        }
+        console.log(checkLastDigit(11,23,44));
+        console.log(checkLastDigit(11,21,31));
+    </script>
+</body>
+</html>
