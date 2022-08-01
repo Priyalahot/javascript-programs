@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a JavaScript program to compute the sum of the two given integers,
+        //  If the sum is in the range 50..80 return 65 other wise return 80.
+
+        function sumofNumbers(a,b){
+            let sum = a + b;
+
+            if(sum >=50 && sum <=80){
+                return 65;
+            }else{
+                return 80;
+            }
+        }
+        console.log(sumofNumbers(50,10));
+        console.log(sumofNumbers(40,100));
+    </script>
+</body>
+</html>
