@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //   Write a JavaScript program to check whether a given string contains equal number of p's and t's. 
+
+    function equal_pt(str){
+        let str_p = str.replace(/[^p]/g,"");
+        let str_t = str.replace(/[^t]/g,"");
+
+        let p_num = str_p.length;
+        let t_num = str_t.length;
+
+        return p_num == t_num;
+
+    }
+
+    console.log(equal_pt("passportt"));
+    console.log(equal_pt("laptop"));
+    </script>
+</body>
+</html>
