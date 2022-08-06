@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  Write a JavaScript program to create a string using the middle three characters of a given
+        //  string of odd length. The string length must be greater or equal to three.  
+
+        function checkString(str){
+            if(str.length >=3){
+
+                if(str.length%2 != 0){
+                    mid = (str.length+1)/2;
+                    return str.slice(mid-2,mid+1);
+                }
+                return str;
+            }
+           
+        }
+        console.log(checkString("Saurabh"));
+        console.log(checkString("priya"));
+    </script>
+</body>
+</html>

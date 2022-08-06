@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a JavaScript program to move last three character to the start of a given string. 
+        // The string length must be greater or equal to three. 
+
+        function moveString(str){
+            if(str.length>=3){   
+                let start_str = str.substring(0,str.length-3);
+                let last_str = str.substring(str.length-3);
+
+                return last_str + start_str;
+            }else{
+                return false;
+            }
+        }
+            //  if(str.length > 3){
+            //     return str.slice(-3)+ str.slice(0,-3);
+            //  }
+            // return str;
+            
+
+
+        console.log(moveString("saurabh"));
+        console.log(moveString("priya"));
+        console.log(moveString("ab"));
+    </script>
+</body>
+</html>

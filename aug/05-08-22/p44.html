@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  Write a JavaScript program to concatenate two strings and return the result. 
+        // If the length of the strings are not same then remove the characters from the longer string.
+
+        function concateString(s1,s2){
+            if(s1.length == s2.length){
+                return s1 + s2;
+            }else if(s1.length > s2.length){
+                return s1.slice(0,s2.length) + s2 ;
+            }else if(s2.length > s1.length){
+                return s1 + s2.slice(0,s1.length);
+            }else{
+                return false;
+            }
+        }
+
+        console.log(concateString("saurabh","supriya"));
+        console.log(concateString("saurabh","priya"));
+        console.log(concateString("priya","saurabh"));
+    </script>
+</body>
+</html>
