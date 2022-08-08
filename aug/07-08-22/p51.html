@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // . Write a JavaScript program to check whether 1 appears in first or last position of a 
+        // given array of integers. The array length must be greater or equal to 1.  
+
+        function arrayElement(arr) {
+            if (arr.length >= 1) {
+                if (arr[0] == 1 || arr[arr.length - 1] == 1) {
+                    console.log("1 is present");
+                } else {
+                    console.log("not present");
+                }
+
+            } else {
+                console.log("length must be greater than 1");
+            }
+        }
+
+
+
+        arrayElement([1, 2, 3, 5]);
+        arrayElement([2, 3, 4, 1]);
+        arrayElement([2, 4]);
+
+
+        //function first_last_1(nums)
+          //{
+            //var end_pos = nums.length - 1;
+            //return nums[0] == 1 || nums[end_pos] == 1;
+         //}
+
+    </script>
+</body>
+
+</html>

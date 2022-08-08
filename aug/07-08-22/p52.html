@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a JavaScript program to check whether the first and last elements are 
+        // equal of a given array of integers length 3
+
+        function arrayElement(arr){
+            
+            let end = arr.length-1;
+
+            if(arr[0]== arr[end]){
+                console.log("true");
+            }else{
+               console.log("false");;
+            }
+        }
+
+        arrayElement([1,2,3,45,1]);
+        arrayElement([1,2,3,4]);
+        arrayElement(["a","b","c","a"]);
+    </script>
+</body>
+</html>
