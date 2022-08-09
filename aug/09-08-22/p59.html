@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a JavaScript program to swap the first and last elements of a given array of integers.
+        //  The array length should be at least 1.
+
+        function arrayElement(arr){
+            // let a = arr[0],
+            //     b = arr[arr.length-1];
+
+            //     console.log(a ,b);
+            //     console.log("after swap");
+
+            //     let temp = a
+            //         a = b;
+            //         b = temp;
+            // console.log(a , b);
+
+
+            [arr[0], arr[arr.length-1]]=[arr[arr.length-1], arr[0]];
+            console.log(arr);
+        }
+
+      arrayElement([1,2,3,4,5]);
+      arrayElement(["a","b","c","d"]);
+    </script>
+</body>
+</html>
