@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //   Write a JavaScript program to check whether two given integers are similar or not, if a given divisor divides both integers and it does not divide either
+
+    function checkNumber(x,y,divisor){
+        if(x % divisor ===0 && y % divisor ===0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    console.log(checkNumber(10,15,5));
+
+    console.log(checkNumber(10,15,9));
+    </script>
+</body>
+</html>
