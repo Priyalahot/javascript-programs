@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  Write a JavaScript program to find the maximum possible sum of some of its k consecutive numbers (numbers that follow each other in order.) of a given array of positive integers. 
+
+        function findMaximumSum(arr, k) {
+            let result =0;
+            let temp_sum = 0;
+            for(let i=0; i<k-1; i++){
+                temp_sum = temp_sum + arr[i];
+            }
+            for(let j=k-1;j<arr.length; j++){
+                temp_sum = temp_sum+arr[j];
+            
+                if(temp_sum>result){
+                    result = temp_sum;
+                }
+                temp_sum = temp_sum-arr[j-k+1];
+            }
+            return result;
+        }
+        console.log(findMaximumSum([1,2,3,14,5],2));
+    </script>
+</body>
+</html>
