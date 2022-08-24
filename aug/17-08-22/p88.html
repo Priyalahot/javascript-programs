@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a JavaScript function that checks whether a passed string is palindrome or not?
+
+        function check_palindrome(str){
+            let change_str = str.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');
+            let count = 0;
+
+            if(str === ""){
+                console.log("Nothing Found!");
+                return false;
+            }
+
+            if((change_str)%2 === 0){
+                count =(change_str.length)/2;
+            }else{
+                if(change_str.length === 1){
+                    console.log("String is palindrome");
+                    return true;
+                }else{
+                    change_str = (change_str.length - 1)/2;
+                }
+            }
+
+            for(var x =0; x < count; x++){
+                if(change_str[x] != change_str.slice(-1-x)[0]){
+                    console.log("String is not palindrome");
+                    return false;
+                }
+            }
+            console.log("String is palindrome");
+            return true;
+        }
+
+        check_palindrome("madam");
+        check_palindrome("priya");
+    </script>
+</body>
+</html>
