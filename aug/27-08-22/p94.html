@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a JavaScript function which accepts an argument and returns the type
+        function typeOfData(value){
+            let datatype  = [Function, RegExp,Number,String,Boolean,Object];
+            let x,len;
+
+            if(typeof value =="object"|| typeof value == "function"){
+                for(let i =0, len = datatype.length; i<len;i++){
+                    if(value instanceof datatype[i]){
+                        return datatype[i];
+                    }
+                }
+            }
+            return typeof value;
+        }
+
+        let obj = {
+            name:"piya",
+            age:22
+        }
+        console.log(typeOfData(12));
+        console.log(typeOfData("12"));
+        console.log(typeOfData(12));
+        console.log(typeOfData(obj));
+    </script>
+</body>
+</html>
