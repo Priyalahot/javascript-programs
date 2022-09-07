@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // . Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity).
+        function removeDuplicate(n){
+            let x,
+            len = n.length,
+            out=[],
+            obj = {};
+
+            for(x = 0; x <len; x++){
+                obj[n[x]] = 0;
+            }
+            for(x in obj){
+                out.push(x);
+            }
+            return out;
+        }
+        let num = [1,2,2,3,4,5,4,4,7,3,6];
+        result = removeDuplicate(num);
+        console.log(num);
+        console.log(result);
+    </script>
+</body>
+</html>
