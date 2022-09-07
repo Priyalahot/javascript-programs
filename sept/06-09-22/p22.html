@@ -8,7 +8,22 @@
 </head>
 <body>
     <script>
-        
+        // Write a JavaScript program which accept a string as input and swap the case of each character. For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'.
+        let str = 'pIyA';
+        let upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        let lower = 'abcdefghijklmnopqrstuvwxyz';
+        let res =[];
+
+        for(let i = 0;i<str.length;i++){
+            if(upper.indexOf(str[i]) !== -1){
+                res.push(str[i].toLowerCase());
+            }else if(lower.indexOf(str[i]) !== -1){
+                res.push(str[i].toUpperCase());
+            }else{
+                res.push(str[i]);
+            }
+        }
+        console.log(res.join(''));
     </script>
 </body>
 </html>
