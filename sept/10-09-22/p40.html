@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a JavaScript function to convert a decimal number to binary, hexadecimal or octal number.
+
+         decimalToBinar = function(n,base){
+            if(n < 0){
+                n = 0xFFFFFFFF + n + 1;
+            }
+
+            switch(base){
+                case 'B':
+                    return parseInt(n,10).toString(2);
+                    break;
+                case 'H':
+                    return parseInt(n,10).toString(16);
+                    break;
+                case 'O':
+                    return parseInt(n,10).toString(8);
+                    break;
+                default:
+                    return("wrong input..");
+            }
+        }
+        console.log(decimalToBinar(120,'B'));
+        console.log(decimalToBinar(120,'H'));
+        console.log(decimalToBinar(120,'O'));
+    </script>
+</body>
+</html>

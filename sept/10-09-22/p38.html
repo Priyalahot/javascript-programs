@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //  Write a JavaScript function to convert a number from one base to another
+    let base_convert = function(number, initial_base, change_base){
+        if((initial_base && change_base) < 2 || (initial_base && change_base) > 36)
+        return 'Base between 2 and 36';
+
+        return parseInt(number + '', initial_base).toString(change_base);
+    }
+
+    console.log(base_convert('E164',16,8));
+    console.log(base_convert(1000,2,8));
+    </script>
+</body>
+</html>
