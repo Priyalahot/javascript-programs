@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a JavaScript function to format a number up to specified decimal places.
+        function decimal(n,d){
+            if((typeof n != 'number')|| (typeof d != 'number'))
+            return false;
+             n = parseFloat(n) || 0;
+             return n.toFixed(d);
+        }
+        console.log(decimal(2.10123,2));
+        console.log(decimal(2.10123,3));
+        console.log(decimal(2.10123,4));
+    </script>
+</body>
+</html>
