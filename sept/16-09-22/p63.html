@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a JavaScript function to find out if a number is a natural number or not
+        function is_natural(n){
+            if(typeof n != 'number')
+                return 'Not a number';
+
+        return (n >= 0.0) && (Math.floor(n) === n) && n != Infinity;
+        }
+        console.log(is_natural(-15));
+        console.log(is_natural(12));
+    </script>
+</body>
+</html>
